@@ -1,0 +1,79 @@
+*{
+    padding:0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* background-color: antiquewhite; */
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/*nav itu navigator jadi ntar klo dipencet bakal berfungsi*/
+nav{
+    background: #4B1F0E;
+    height: 60px;
+    width: 100%;
+}
+
+/*buat di label nya*/
+label.logo{
+    color: bisque;
+    font-size: 25px;
+    line-height: 60px;/*buat ngasih jarak di ketinggiannya ini dikasih 50 soalnya height di nav nya 50*/
+    padding: 0 40px; /*buat ngasih jarak ke tengah width*/
+    font-weight: bold; /*buat ngatur ketebalan tulisan*/
+    /* transition: transform 0.5s; */
+}
+
+/* label.logo:hover{
+    transform: rotateY(90deg);
+} */
+
+nav ul{
+    float: right; /*buat naruh menu lainnya di pojok kanan*/
+    margin-right: 30px ; /*buat naruh menu nya agak ke tengah*/
+}
+
+nav ul li{
+    display: inline-block; /*buat menu lainnya jadi sejajar*/
+    line-height: 60px; /*buat naruh si menu lainnya di tengah*/
+    margin: 0 10px; /*buat ngasih jarak antara dua menu nya*/
+}
+
+nav ul li a{
+    color:bisque;
+    font-size: 13px; 
+    padding: 7px 13px;
+    border-radius: 5px ;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background:#794028; /*buat ngasih warna menu*/
+    transition: 0.5s;
+}
+
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size:30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+}
+
+section{
+    background: url(cafe2.jpg) no-repeat;
+    background-size: cover;
+    height:calc(100vh - 50px);
+}
+
