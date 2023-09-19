@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CALCULATOR</title>
+</head>
+
+
+<body>
+    <h3>Masukkan angka</h3>
+
+<input type="number" id="myNumber1" value="0">
+<input type="number" id="myNumber2" value="0">
+
+<p>Pilih salah satu bentuk operan</p>
+
+<button onclick="tambah()">+</button>
+
+<button onclick="kurang()">-</button>
+
+<button onclick="bagi()">/</button>
+
+<button onclick="kali()">*</button>
+
+
+<p id="hasil"></p>
+
+<script>
+function tambah() {
+  let x = parseInt(document.getElementById("myNumber1").value);
+  let y = parseInt(document.getElementById("myNumber2").value);
+  document.getElementById("hasil").innerHTML = x + y;
+}
+
+function kurang() {
+  let x = parseInt(document.getElementById("myNumber1").value);
+  let y = parseInt(document.getElementById("myNumber2").value);
+  document.getElementById("hasil").innerHTML = x - y;
+}
+
+function bagi() {
+  let x = parseInt(document.getElementById("myNumber1").value);
+  let y = parseInt(document.getElementById("myNumber2").value);
+  document.getElementById("hasil").innerHTML = x / y;
+}
+
+function kali() {
+  let x = parseInt(document.getElementById("myNumber1").value);
+  let y = parseInt(document.getElementById("myNumber2").value);
+  document.getElementById("hasil").innerHTML = x * y;
+}
+</script> 
+</body>
+</html>
