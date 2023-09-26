@@ -1,0 +1,108 @@
+body{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.custom-card{
+  /* width: 200px; */
+  /* height: 70px;  */
+}
+
+.ukuran-font-angka{
+  color:#777b7e;
+  font-size: 20px;
+  text-align: right;
+  margin-bottom: 5px;
+  margin-top: 0%;
+  font-weight: bold;
+  
+}
+
+.ukuran-font-angka-kiri{
+  color:#777b7e;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 0%;
+  font-weight: bold;
+}
+
+.ukuran-font-huruf{
+  color:#777b7e;
+  font-size: 12px;
+  text-align: right;
+  margin-top: 5px;
+  margin-bottom: 0%;
+  font-weight: bold;
+}
+
+.ukuran-font-huruf-kiri{
+  color:#777b7e;
+  font-size: 12px;
+  text-align: right;
+  margin-top: 5px;
+  margin-bottom: 0%;
+  font-weight: bold;
+}
+
+
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+
+/* Mengganti warna ikon bi-pencil-fill menjadi merah */
+.bi-pencil-fill{
+    color: #0172b6;
+  }
+  
+  /* Mengganti warna ikon bi-chat-left menjadi biru */
+  .bi-chat-left {
+    color: #fccb42;
+    
+  }
+  
+  /*buat ganti warna icon bootstraps*/
+  .bi-graph-up-arrow {
+    color: #00a170;
+  }
+
+  .bi-geo-alt-fill{
+    color : #e80265 ;
+  }
+
+  .bi-rocket-takeoff-fill{
+    color :#fccb42;
+  }
+
+  .bi-person{
+    color :#0172b6;
+  }
+
+  .bi-pie-chart-fill{
+    color :#e80265;
+  }
+
+  .bi-life-preserver{
+    color :#00a170;
+  }
+  
+  .bi-book{
+    color:#00a170
+  }
+
+  .bi-chat-text-fill{
+    color: #e80265;
+  }
+
+  .bi-cup-hot-fill{
+    color:#0172b6;
+  }
+
+  .bi-signpost-2-fill{
+    color:#fccb42
+  }
+  
