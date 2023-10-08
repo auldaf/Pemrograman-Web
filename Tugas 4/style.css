@@ -21,7 +21,6 @@ body{
 .ukuran-font-angka-kiri{
   color:#777b7e;
   font-size: 20px;
-  text-align: left;
   margin-bottom: 5px;
   margin-top: 0%;
   font-weight: bold;
@@ -39,7 +38,6 @@ body{
 .ukuran-font-huruf-kiri{
   color:#777b7e;
   font-size: 12px;
-  text-align: right;
   margin-top: 5px;
   margin-bottom: 0%;
   font-weight: bold;
@@ -53,6 +51,16 @@ body{
   height: 100%;
 }
 
+.ikon-tengah-kiri{
+  top : 50% ;
+  bottom: 50%;
+
+}
+
+.ikon-kanan{
+  float: right;
+  margin-left: 0%;
+}
 
 /* Mengganti warna ikon bi-pencil-fill menjadi merah */
 .bi-pencil-fill{

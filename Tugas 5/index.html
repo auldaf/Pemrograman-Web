@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Cuaca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Lokasi" class="input-box">
+
+                <!-- supaya si iconnya masuk ke dalam button jadi si class buat icon ditaruh kedalam button -->
+                <button class="fa-solid fa-magnifying-glass-location" id="searchBtn" title="Cari tempat">
+                </button>
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1>Lokasi tidak ditemukan</h1>
+            <img src="img2/error3.png" alt="Error">
+        </div>
+
+        
+        <div class="weather-body">
+            <img src="img2/cloudy.png" alt="Weather Image" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">Cerah Berawan</p>
+            </div>
+
+            <div class="weather-details">
+                
+                <div class="kelembaban">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="kelembaban">45%</span>
+                        <p>Kelembaban</p>
+                    </div>
+                </div>
+
+                
+                <div class="kecepatan-angin">
+                    <i class="fa-solid fa-wind"></i>
+                        <div class="text">
+                        <span id="kecepatan-angin">10Km/H</span>
+                        <p>Kecepatan Angin</p>
+                    </div>
+                </div>
+
+
+                <div class="terasa-seperti">
+                    <i class="fa-solid fa-temperature-full"></i>
+                        <div class="text">
+                        <span id="terasa-seperti"><sup>°C</sup></span>
+                        <p>Suhu Terasa</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- buat bootstrap icon nya -->
+    <script src="https://kit.fontawesome.com/322c6228eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- buat nyangkutin si script nya (buat api) -->
+    <script src="script.js"></script>
+</body>
+</html>
