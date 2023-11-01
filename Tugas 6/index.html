@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<html>
+  <head>
+    <title>Calculator Pakai Vue.js</title>
+  </head>
+
+  <body>
+    <h2>Calculator Pakai Vue.js</h2>
+
+    <div id="app">
+      <input v-model="num1" type=>
+      <input v-model="num2">
+      <button v-on:click="tambah">+</button>
+      <button v-on:click="kurang">-</button>
+      <button v-on:click="kali">*</button>
+      <button v-on:click="bagi">/</button>
+      <p>Hasil: {{ hasil }}</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

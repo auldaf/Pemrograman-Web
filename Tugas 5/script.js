@@ -1,3 +1,6 @@
+//pakai nya const soalnya supaya si object nya itu ga berubah
+//kalo misal gabisa pake const pakenya let
+//var gamungkin dipake karena var dipake di browser lama
 const inputBox = document.querySelector('.input-box');
 const searchBtn = document.getElementById('searchBtn');
 const weather_img = document.querySelector('.weather-img');
@@ -10,6 +13,8 @@ const terasa_seperti = document.getElementById('terasa-seperti');
 const location_not_found = document.querySelector('.location-not-found');
 const weather_body = document.querySelector('.weather-body');
 
+//async itu buat nunggu si promises lebih mudah di tulis
+//async itu bisa juga pakai promises
 async function checkWeather(city){
     //api key di ambil dari openweathermap
     const api_key = "420005c16d215fb815e923f867a42a2b";
@@ -17,6 +22,8 @@ async function checkWeather(city){
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}&lang=id`;
 
     //ini buat ajax nya
+    //await itu bisa dipake kalo misal pake async, kmrn wktu pake async tpi gapake await itu jadinya error
+    //fetch itu buat ngambil API dari hhtp server web, klo udh pake fetch gausah pake XMLHttpRequests
     const weather_data = await fetch(`${url}`).then(response => response.json());
 
 
@@ -38,6 +45,7 @@ async function checkWeather(city){
     description.innerHTML = `${weather_data.weather[0].description}`
     // console.log(weather_data);
 
+    //innerhtml buat ganti elemen di dalamnya
     kelembaban.innerHTML = `${weather_data.main.humidity}%`;
     kecepatan_angin.innerHTML = `${weather_data.wind.speed}Km/H`;
     terasa_seperti.innerHTML = `${Math.round(weather_data.main.feels_like - 273.15)}°C`;
